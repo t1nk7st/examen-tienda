@@ -1,6 +1,6 @@
 public class Carrito {
 
-    private static final double IVA = 0.21;
+    private static final double IVA = 0.10;
     private double subtotal = 0;
 
     public void añadirProducto(Producto producto) {
