@@ -11,6 +11,10 @@ public class Carrito {
         return subtotal * (1 + IVA);
     }
 
+    public double totalConDescuento(double porcentaje) {
+        return totalConIva() * (1 - porcentaje / 100);
+    }
+
     public void mostrarTicket() {
         System.out.printf("Subtotal: %.2f €%n", subtotal);
         System.out.printf("Total con IVA: %.2f €%n",
